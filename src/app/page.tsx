@@ -24,12 +24,12 @@ export default function Home() {
       <main className="flex-1">
         <section className="w-full py-24 md:py-32 lg:py-40 xl:py-48">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="flex flex-col items-start space-y-4 text-left">
               <div className="space-y-4">
                 <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Hi, I&apos;m a <span className="text-primary">Cipher</span> !
+                  Hi, I&apos;m a <span className="text-primary">Cipher</span>,
                 </h1>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   I&apos;m a 3D Modeler, specializing in creating high-quality 3D models with
                   {' '}
                   <b className="underline" style={{color: '#F5792A'}}>Blender</b>
