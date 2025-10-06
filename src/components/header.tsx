@@ -17,7 +17,6 @@ export function Header() {
   const navLinks = [
     { href: "#my-work", label: "My Work" },
     { href: "#commissions", label: "Commissions" },
-    { href: "#contact-me", label: "Contact" },
   ];
 
   useEffect(() => {
@@ -64,7 +63,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
           <Button asChild className="hidden md:flex">
-            <Link href="#contact-me">Contact Me</Link>
+            <Link href="#commissions">Contact Me</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>

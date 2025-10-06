@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TypingAnimation } from "@/components/typing-animation";
-import { CommissionForm } from "@/components/commission-form";
 
 export default function Home() {
   const projects = PlaceHolderImages.filter((img) =>
@@ -105,27 +104,12 @@ export default function Home() {
                 Commission a 3D Model
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Ready to bring your vision to life? Fill out the form below to get a quote for a custom 3D model. Please provide as much detail as possible.
+                Ready to bring your vision to life? Contact me for a quote for a custom 3D model. Please provide as much detail as possible.
               </p>
-            </div>
-            <div className="mx-auto mt-12 w-full">
-              <CommissionForm />
             </div>
           </div>
         </section>
 
-        <section id="contact-me" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Follow Me
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Find me at Roblox, X, Artstation
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
