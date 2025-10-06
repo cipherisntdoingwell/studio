@@ -30,7 +30,7 @@ export default function Home() {
                 <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                   Hi, I&apos;m a{" "}
                   <TypingAnimation
-                    text="Cipher,"
+                    text="Cipher"
                     className="text-primary"
                   />
                 </h1>

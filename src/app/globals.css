@@ -54,7 +54,7 @@
 
 @layer utilities {
   .typing-cursor {
-    border-right: 0.2em solid hsl(var(--primary-foreground));
+    border-right: 0.15em solid hsl(var(--primary-foreground));
     animation: blink-caret 0.75s step-end infinite;
   }
 
