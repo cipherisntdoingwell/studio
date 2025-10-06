@@ -125,29 +125,9 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto mt-2 w-full max-w-sm space-y-2">
-              <div className="flex flex-col items-center space-y-2 text-lg font-medium">
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <span>-</span>
-                  <span>Roblox</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <span>-</span>
-                  <span>Artstation</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <span>-</span>
-                  <span>Twitter</span>
-                </Link>
-              </div>
+              <p className="text-muted-foreground">
+                Find me at Roblox, X, Artstation
+              </p>
             </div>
           </div>
         </section>
