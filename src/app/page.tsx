@@ -118,7 +118,7 @@ export default function Home() {
           <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Let&apos;s Connect
+                Find Me
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Follow my work, discuss potential projects, or just say hello. Find me on these platforms.
