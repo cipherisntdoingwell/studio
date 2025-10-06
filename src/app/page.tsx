@@ -21,6 +21,38 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 
+const BlenderLogo = () => (
+  <svg
+    className="inline-block h-6 w-6"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16.5 6.42857C18.9853 6.42857 21 8.44327 21 10.9286C21 12.0375 20.6213 13.0583 20.0053 13.8821C19.9984 13.8906 19.9916 13.899 19.9847 13.9073L13.9073 19.9847C13.899 19.9916 13.8906 19.9984 13.8821 20.0053C13.0583 20.6213 12.0375 21 10.9286 21C8.44327 21 6.42857 18.9853 6.42857 16.5C6.42857 14.0147 8.44327 12 10.9286 12C12.0375 12 13.0583 12.3787 13.8821 12.9947C13.8906 13.0016 13.899 13.0084 13.9073 13.0153L19.9847 7.0153C19.9916 7.00845 19.9984 7.00161 20.0053 6.99472C20.6213 7.62128 21 8.44327 21 10.9286"
+      fill="#F5792A"
+      stroke="#fff"
+      strokeWidth="1.5"
+    />
+    <circle cx="10.9286" cy="10.9286" r="4.5" fill="#F5792A" stroke="#fff" strokeWidth="1.5" />
+    <circle cx="10.9286" cy="10.9286" r="1.5" fill="#fff" />
+  </svg>
+);
+
+const SubstancePainterLogo = () => (
+    <svg 
+        className="inline-block h-6 w-6"
+        viewBox="0 0 24 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="#00C88C"/>
+        <path d="M12 12L22 7L12 2L2 7L12 12Z" fill="#3A3A3A"/>
+        <path d="M16 14.5C16 15.3284 15.3284 16 14.5 16H9.5C8.67157 16 8 15.3284 8 14.5V9.5C8 8.67157 8.67157 8 9.5 8H14.5C15.3284 8 16 8.67157 16 9.5V14.5Z" fill="#fff"/>
+        <path d="M12 12H14.5C15.3284 12 16 11.3284 16 10.5V9.5C16 8.67157 15.3284 8 14.5 8H12V12Z" fill="#3A3A3A"/>
+    </svg>
+);
+
 export default function Home() {
   const professionalPhoto = PlaceHolderImages.find(
     (img) => img.id === "professional-photo"
@@ -41,8 +73,18 @@ export default function Home() {
                   <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Hi, I&apos;m a <span className="text-primary">Cipher</span>
                   </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    I&apos;m a 3D Modeller, I make all sorts of Models Through <b style={{color: '#F5792A'}}>Blender</b> and paint them in <b style={{color: '#00C88C'}}>Substance Painter</b>. Welcome to My Portfolio
+                  <p className="flex max-w-[600px] flex-wrap items-center gap-x-2 text-muted-foreground md:text-xl">
+                    I&apos;m a 3D Modeller, I make all sorts of Models Through
+                    <span className="inline-flex items-center gap-2">
+                      <BlenderLogo />
+                      <b style={{color: '#F5792A'}}>Blender</b>
+                    </span>
+                     and paint them in
+                    <span className="inline-flex items-center gap-2">
+                      <SubstancePainterLogo />
+                      <b style={{color: '#00C88C'}}>Substance Painter</b>
+                    </span>
+                    . Welcome to My Portfolio
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
