@@ -94,7 +94,7 @@ export default function Home() {
                 Commission a 3D Model
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Ready to bring your vision to life? Contact me for a quote for a custom 3D model. Please provide as much detail as possible.
+                Ready to bring your vision to life? Contact me for a quote for a custom 3D model. Please provide as much detail as possible. Please note that the cost of the commission will increase with the level of detail required. All prices are negotiable.
               </p>
             </div>
           </div>
