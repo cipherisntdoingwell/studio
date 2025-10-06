@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { TypingAnimation } from "@/components/typing-animation";
 
 export default function Home() {
   const projects = PlaceHolderImages.filter((img) =>
@@ -27,7 +28,11 @@ export default function Home() {
             <div className="flex flex-col items-start space-y-4 text-left">
               <div className="space-y-4">
                 <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Hi, I&apos;m a <span className="text-primary">Cipher</span>,
+                  Hi, I&apos;m a{" "}
+                  <TypingAnimation
+                    text="Cipher,"
+                    className="text-primary"
+                  />
                 </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   I&apos;m a 3D Modeler, specializing in creating high-quality 3D models with
@@ -48,19 +53,6 @@ export default function Home() {
                   <Link href="#my-work">My Work</Link>
                 </Button>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about-me" className="w-full bg-muted/40 py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                About Me
-              </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I embarked on my 3D modeling journey two years ago and have been passionately honing my skills ever since. I am dedicated to continuous improvement and creating high-quality digital art.
-              </p>
             </div>
           </div>
         </section>
@@ -101,6 +93,19 @@ export default function Home() {
                   </CardHeader>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="about-me" className="w-full bg-muted/40 py-12 md:py-24 lg:py-32">
+          <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
+            <div className="space-y-3">
+              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                About Me
+              </h2>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                I embarked on my 3D modeling journey two years ago and have been passionately honing my skills ever since. I am dedicated to continuous improvement and creating high-quality digital art.
+              </p>
             </div>
           </div>
         </section>

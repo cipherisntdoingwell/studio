@@ -51,3 +51,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .typing-cursor {
+    border-right: 0.2em solid hsl(var(--primary-foreground));
+    animation: blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(var(--primary-foreground));
+    }
+  }
+}
