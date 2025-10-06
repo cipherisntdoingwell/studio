@@ -42,7 +42,7 @@ export default function Home() {
                     Hi, I&apos;m a <span className="text-primary">Cipher</span>
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    I design and build beautiful, responsive, and user-friendly websites and applications. Welcome to my personal space on the web.
+                    I&apos;m a 3D Modeller, I make all sorts of Models Through <span style={{color: '#F5792A'}}>Blender</span> and paint them in <span style={{color: '#00F4A4'}}>Substance Painter</span>. Welcome to My Portfolio
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
