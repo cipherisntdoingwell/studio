@@ -121,11 +121,6 @@ export default function Home() {
                 Follow Me
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Follow my work, discuss potential projects, or just say hello. Find me on these platforms.
-              </p>
-            </div>
-            <div className="mx-auto mt-2 w-full max-w-sm space-y-2">
-              <p className="text-muted-foreground">
                 Find me at Roblox, X, Artstation
               </p>
             </div>
