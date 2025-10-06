@@ -31,14 +31,7 @@ export default function Home() {
                   I&apos;m Cipher
                 </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  I&apos;m a 3D Modeler, specializing in creating high-quality 3D models with
-                  {' '}
-                  <b className="underline" style={{color: '#F5792A'}}>Blender</b>
-                  {' '}
-                   and texturing them in
-                  {' '}
-                  <b className="underline" style={{color: '#317236'}}>Substance Painter</b>
-                  . Welcome to my portfolio.
+                  <TypingAnimation text="I'm a 3D Modeler, specializing in creating high-quality 3D models with Blender and texturing them in Substance Painter. Welcome to my portfolio." />
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
