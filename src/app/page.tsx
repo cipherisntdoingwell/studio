@@ -84,7 +84,7 @@ export default function Home() {
                 About Me
               </h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I am a passionate and creative professional with a love for technology and design. My journey in web development started years ago, and I have been honing my skills ever since. I thrive on bringing ideas to life and creating digital experiences that are not only functional but also aesthetically pleasing.
+                As a dedicated 3D Modeler, I specialize in crafting high-quality 3D models using <b className="underline" style={{color: '#F5792A'}}>Blender</b> and bringing them to life with realistic textures in <b className="underline" style={{color: '#317236'}}>Substance Painter</b>. I am passionate about creating detailed and immersive digital assets.
               </p>
             </div>
           </div>
