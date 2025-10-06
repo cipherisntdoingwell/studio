@@ -46,7 +46,7 @@ const SubstancePainterLogo = () => (
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
     >
-        <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="#00C88C"/>
+        <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="#317236"/>
         <path d="M12 12L22 7L12 2L2 7L12 12Z" fill="#3A3A3A"/>
         <path d="M16 14.5C16 15.3284 15.3284 16 14.5 16H9.5C8.67157 16 8 15.3284 8 14.5V9.5C8 8.67157 8.67157 8 9.5 8H14.5C15.3284 8 16 8.67157 16 9.5V14.5Z" fill="#fff"/>
         <path d="M12 12H14.5C15.3284 12 16 11.3284 16 10.5V9.5C16 8.67157 15.3284 8 14.5 8H12V12Z" fill="#3A3A3A"/>
@@ -74,17 +74,17 @@ export default function Home() {
                     Hi, I&apos;m a <span className="text-primary">Cipher</span>
                   </h1>
                   <p className="flex max-w-[600px] flex-wrap items-center gap-x-2 text-muted-foreground md:text-xl">
-                    I&apos;m a 3D Modeller, I make all sorts of Models Through
+                    I&apos;m a 3D Modeler, specializing in creating high-quality 3D models with
                     <span className="inline-flex items-center gap-2">
                       <BlenderLogo />
                       <b style={{color: '#F5792A'}}>Blender</b>
                     </span>
-                     and paint them in
+                     and texturing them in
                     <span className="inline-flex items-center gap-2">
                       <SubstancePainterLogo />
-                      <b style={{color: '#00C88C'}}>Substance Painter</b>
+                      <b style={{color: '#317236'}}>Substance Painter</b>
                     </span>
-                    . Welcome to My Portfolio
+                    . Welcome to my portfolio.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
