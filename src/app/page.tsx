@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, Mail, Twitter } from "lucide-react";
+import { Mail, Twitter } from "lucide-react";
 
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Header } from "@/components/header";
@@ -14,43 +14,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { TypingAnimation } from "@/components/typing-animation";
 import { CommissionForm } from "@/components/commission-form";
-
-const RobloxIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M4.15 4.15 15.06 3l4.79 4.79-1.15 10.91-10.91 1.15-4.79-4.79L4.15 4.15Z" />
-    <path d="m8.5 8.5 7 7" />
-  </svg>
-);
-
-const ArtstationIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M16.5 6.5h-9l-3 9h3l3-9 3 9h3l-3-9z" />
-    <path d="m10 10.5 1.5-4.5" />
-    <path d="M12 15.5h-1.5" />
-  </svg>
-);
 
 export default function Home() {
   const projects = PlaceHolderImages.filter((img) =>
@@ -162,27 +125,24 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto mt-2 w-full max-w-sm space-y-2">
-              <div className="flex justify-center space-x-6">
+              <div className="flex justify-center space-x-6 text-lg font-medium">
                 <Link
                   href="#"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  aria-label="Roblox"
                 >
-                  <RobloxIcon className="h-8 w-8" />
+                  Roblox
                 </Link>
                 <Link
                   href="#"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  aria-label="Artstation"
                 >
-                  <ArtstationIcon className="h-8 w-8" />
+                  Artstation
                 </Link>
                 <Link
                   href="#"
                   className="text-muted-foreground transition-colors hover:text-primary"
-                  aria-label="Twitter"
                 >
-                  <Twitter className="h-8 w-8" />
+                  Twitter
                 </Link>
               </div>
             </div>
