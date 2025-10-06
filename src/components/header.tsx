@@ -15,7 +15,6 @@ export function Header() {
   const closeSheet = () => setSheetOpen(false);
 
   const navLinks = [
-    { href: "#about-me", label: "About Me" },
     { href: "#my-work", label: "My Work" },
     { href: "#contact-me", label: "Contact" },
   ];
