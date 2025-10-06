@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="#contact-me">Contact Me</Link>
+                  <Link href="#contact-me">Commission Me</Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
                   <Link href="#my-work">My Work</Link>
