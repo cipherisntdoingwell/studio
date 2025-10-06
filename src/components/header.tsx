@@ -44,8 +44,10 @@ export function Header() {
     >
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center px-4 md:px-6">
         <div className="flex flex-1 items-center justify-start">
-          <Link href="#" className="flex items-center space-x-2" onClick={closeSheet}>
-            <span className="font-headline text-lg font-bold">Cipher 0 n</span>
+          <Link href="#" className="flex items-center" onClick={closeSheet}>
+            <span className="font-headline text-xl font-bold tracking-tight">
+              Cipher<span className="text-3xl">0</span>n
+            </span>
           </Link>
         </div>
         <nav className="hidden items-center justify-center gap-6 text-sm font-medium md:flex">
@@ -77,7 +79,9 @@ export function Header() {
                   className="flex items-center gap-2 text-lg font-semibold"
                   onClick={closeSheet}
                 >
-                  <span className="font-headline font-bold">Cipher 0 n</span>
+                  <span className="font-headline text-xl font-bold tracking-tight">
+                    Cipher<span className="text-3xl">0</span>n
+                  </span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link
