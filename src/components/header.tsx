@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Circle } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
@@ -45,8 +45,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center px-4 md:px-6">
         <div className="flex flex-1 items-center justify-start">
           <Link href="#" className="flex items-center space-x-2" onClick={closeSheet}>
-            <Circle className="h-6 w-6" />
-            <span className="font-headline text-lg font-bold">Cipheron</span>
+            <span className="font-headline text-lg font-bold">Cipher 0 n</span>
           </Link>
         </div>
         <nav className="hidden items-center justify-center gap-6 text-sm font-medium md:flex">
@@ -78,8 +77,7 @@ export function Header() {
                   className="flex items-center gap-2 text-lg font-semibold"
                   onClick={closeSheet}
                 >
-                  <Circle className="h-6 w-6" />
-                  <span className="font-headline font-bold">Cipheron</span>
+                  <span className="font-headline font-bold">Cipher 0 n</span>
                 </Link>
                 {navLinks.map((link) => (
                   <Link
