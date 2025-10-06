@@ -7,18 +7,10 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -77,19 +69,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about-me" className="w-full bg-muted/40 py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                About Me
-              </h2>
-              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I embarked on my 3D modeling journey two years ago and have been passionately honing my skills ever since. I am dedicated to continuous improvement and creating high-quality digital art.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section id="my-work" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -102,41 +81,43 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto mt-12 max-w-6xl">
-              <Carousel
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-                className="w-full"
-              >
-                <CarouselContent>
-                  {projects.map((project, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                      <div className="p-1">
-                        <Card className="h-full overflow-hidden border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20">
-                          <div className="aspect-video overflow-hidden">
-                            <Image
-                              alt={`Project ${index + 1}`}
-                              className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-                              data-ai-hint={project.imageHint}
-                              height="400"
-                              src={project.imageUrl}
-                              width="600"
-                            />
-                          </div>
-                          <CardHeader>
-                            <CardTitle className="font-headline text-xl">Project {index + 1}</CardTitle>
-                            <CardDescription>{project.description}</CardDescription>
-                          </CardHeader>
-                        </Card>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious className="ml-8 md:ml-0" />
-                <CarouselNext className="mr-8 md:mr-0" />
-              </Carousel>
+            <div className="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:max-w-6xl lg:grid-cols-3">
+              {projects.map((project, index) => (
+                <Card
+                  key={index}
+                  className="overflow-hidden border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20"
+                >
+                  <div className="aspect-video overflow-hidden">
+                    <Image
+                      alt={`Project ${index + 1}`}
+                      className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                      data-ai-hint={project.imageHint}
+                      height="400"
+                      src={project.imageUrl}
+                      width="600"
+                    />
+                  </div>
+                  <CardHeader>
+                    <CardTitle className="font-headline text-xl">
+                      Project {index + 1}
+                    </CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
+                  </CardHeader>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="about-me" className="w-full bg-muted/40 py-12 md:py-24 lg:py-32">
+          <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
+            <div className="space-y-3">
+              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                About Me
+              </h2>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                I embarked on my 3D modeling journey two years ago and have been passionately honing my skills ever since. I am dedicated to continuous improvement and creating high-quality digital art.
+              </p>
             </div>
           </div>
         </section>
