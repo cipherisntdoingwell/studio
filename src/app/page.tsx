@@ -124,8 +124,8 @@ export default function Home() {
                 Follow my work, discuss potential projects, or just say hello. Find me on these platforms.
               </p>
             </div>
-            <div className="mx-auto mt-6 w-full max-w-sm space-y-2">
-              <div className="flex justify-center space-x-6 pt-4">
+            <div className="mx-auto mt-2 w-full max-w-sm space-y-2">
+              <div className="flex justify-center space-x-6">
                 <Link
                   href="#"
                   className="text-muted-foreground transition-colors hover:text-primary"
