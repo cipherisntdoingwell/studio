@@ -63,7 +63,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
           <Button asChild className="hidden md:flex">
-            <Link href="#commissions">Contact Me</Link>
+            <Link href="#commissions">Commission Me</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
