@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TypingAnimation } from "@/components/typing-animation";
+import { CommissionForm } from "@/components/commission-form";
 
 export default function Home() {
   const projects = PlaceHolderImages.filter((img) =>
@@ -47,7 +48,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="#contact-me">Commission Me</Link>
+                  <Link href="#commissions">Commission Me</Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
                   <Link href="#my-work">My Work</Link>
@@ -73,7 +74,7 @@ export default function Home() {
               {projects.map((project, index) => (
                 <Card
                   key={index}
-                  className="overflow-hidden border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20"
+                  className="overflow-hidden rounded-lg border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20"
                 >
                   <div className="aspect-video overflow-hidden">
                     <Image
@@ -97,21 +98,37 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="commissions" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container mx-auto max-w-3xl px-4 md:px-6">
+            <div className="space-y-3 text-center">
+              <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                Commission a 3D Model
+              </h2>
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Ready to bring your vision to life? Fill out the form below to get a quote for a custom 3D model. Please provide as much detail as possible.
+              </p>
+            </div>
+            <div className="mx-auto mt-12 w-full">
+              <CommissionForm />
+            </div>
+          </div>
+        </section>
+
         <section id="contact-me" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="font-headline text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Get In Touch
+                Let&apos;s Connect
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to discussing new opportunities and collaborations.
+                Follow my work, discuss potential projects, or just say hello. Find me on these platforms.
               </p>
             </div>
             <div className="mx-auto mt-6 w-full max-w-sm space-y-2">
               <Button asChild size="lg" className="w-full">
                 <a href="mailto:hello@persona.dev">
                   <Mail className="mr-2 h-4 w-4" />
-                  Say Hello
+                  hello@persona.dev
                 </a>
               </Button>
               <div className="flex justify-center space-x-4 pt-4">
