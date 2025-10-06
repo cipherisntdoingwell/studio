@@ -84,7 +84,7 @@ export default function Home() {
                 About Me
               </h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                As a dedicated 3D Modeler, I specialize in crafting high-quality 3D models using <b className="underline" style={{color: '#F5792A'}}>Blender</b> and bringing them to life with realistic textures in <b className="underline" style={{color: '#317236'}}>Substance Painter</b>. I am passionate about creating detailed and immersive digital assets.
+                I embarked on my 3D modeling journey two years ago and have been passionately honing my skills ever since. I am dedicated to continuous improvement and creating high-quality digital art.
               </p>
             </div>
           </div>
