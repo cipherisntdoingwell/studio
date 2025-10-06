@@ -46,7 +46,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-start">
           <Link href="#" className="flex items-center" onClick={closeSheet}>
             <span className="font-headline text-xl font-bold tracking-tight">
-              Cipher<span className="text-3xl">0</span>n
+              Cipher<span className="align-middle text-3xl">0</span>n
             </span>
           </Link>
         </div>
@@ -80,7 +80,7 @@ export function Header() {
                   onClick={closeSheet}
                 >
                   <span className="font-headline text-xl font-bold tracking-tight">
-                    Cipher<span className="text-3xl">0</span>n
+                    Cipher<span className="align-middle text-3xl">0</span>n
                   </span>
                 </Link>
                 {navLinks.map((link) => (
