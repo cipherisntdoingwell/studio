@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Twitter } from "lucide-react";
 
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Header } from "@/components/header";
@@ -28,10 +27,12 @@ export default function Home() {
             <div className="flex flex-col items-start space-y-4 text-left">
               <div className="space-y-4">
                 <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  I&apos;m Cipher
+                  I&apos;m <TypingAnimation text="Cipher" />
                 </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  <TypingAnimation text="I'm a 3D Modeler, specializing in creating high-quality 3D models with Blender and texturing them in Substance Painter. Welcome to my portfolio." />
+                  I&apos;m a 3D Modeler, specializing in creating high-quality 3D
+                  models with Blender and texturing them in Substance Painter.
+                  Welcome to my portfolio.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">

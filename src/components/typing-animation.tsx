@@ -33,7 +33,7 @@ export function TypingAnimation({
   }, [index, speed, text]);
 
   return (
-    <span className={cn(className)}>
+    <span className={cn(className, "inline-block")}>
       {displayedText}
       <span className="typing-cursor"></span>
     </span>
