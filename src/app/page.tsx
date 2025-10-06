@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex flex-col items-start space-y-4 text-left">
               <div className="space-y-4">
                 <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  I&apos;m <TypingAnimation text="Cipher" />
+                  Hi, I&apos;m <TypingAnimation text="Cipher" className="text-primary" />
                 </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   I&apos;m a 3D Modeler, specializing in creating high-quality 3D
