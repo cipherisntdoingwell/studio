@@ -125,33 +125,27 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto mt-6 w-full max-w-sm space-y-2">
-              <Button asChild size="lg" className="w-full">
-                <a href="mailto:hello@persona.dev">
-                  <Mail className="mr-2 h-4 w-4" />
-                  hello@persona.dev
-                </a>
-              </Button>
-              <div className="flex justify-center space-x-4 pt-4">
+              <div className="flex justify-center space-x-6 pt-4">
                 <Link
                   href="#"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-muted-foreground transition-colors hover:text-primary"
                   aria-label="GitHub"
                 >
-                  <Github className="h-6 w-6" />
+                  <Github className="h-8 w-8" />
                 </Link>
                 <Link
                   href="#"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-muted-foreground transition-colors hover:text-primary"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-6 w-6" />
+                  <Linkedin className="h-8 w-8" />
                 </Link>
                 <Link
                   href="#"
-                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-muted-foreground transition-colors hover:text-primary"
                   aria-label="Twitter"
                 >
-                  <Twitter className="h-6 w-6" />
+                  <Twitter className="h-8 w-8" />
                 </Link>
               </div>
             </div>
