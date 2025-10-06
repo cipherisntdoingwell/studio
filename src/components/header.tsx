@@ -22,7 +22,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center px-4 md:px-6">
         <Link href="#" className="mr-6 flex items-center space-x-2" onClick={closeSheet}>
           <Mountain className="h-6 w-6" />
-          <span className="font-headline text-lg font-bold">Persona Portfolio</span>
+          <span className="font-headline text-lg font-bold">Cipheron</span>
         </Link>
         <nav className="hidden flex-1 items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -54,7 +54,7 @@ export function Header() {
                   onClick={closeSheet}
                 >
                   <Mountain className="h-6 w-6" />
-                  <span className="font-headline font-bold">Persona Portfolio</span>
+                  <span className="font-headline font-bold">Cipheron</span>
                 </Link>
                 {navLinks.map((link) => (
                     <Link
